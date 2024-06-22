@@ -10,6 +10,6 @@ body {
 }
 
 .wrapper {
-  width: min(100% - calc(var(--size-9) * 2), var(--max-width));
+  width: min(100% - calc(var(--size-7) * 2), var(--max-width));
   margin: 0 auto;
 }
