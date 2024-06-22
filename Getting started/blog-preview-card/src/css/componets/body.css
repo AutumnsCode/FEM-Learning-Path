@@ -1,0 +1,15 @@
+body {
+  min-height: 100svh;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--text));
+  font-size: var(--size-6);
+}
+
+.wrapper {
+  width: min(100% - calc(var(--size-9) * 2), var(--max-width));
+  margin: 0 auto;
+}

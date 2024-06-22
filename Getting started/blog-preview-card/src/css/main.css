@@ -1,0 +1,84 @@
+@layer reset, root, body;
+
+@import url(./componets/reset.css) layer(reset);
+@import url(./componets/root.css) layer(root);
+@import url(./componets/body.css) layer(body);
+
+/* Utility class */
+.flow > *:not(:first-child) {
+  margin-top: var(--flow, 1rem);
+}
+
+/* Card Styling */
+.card {
+  --flow: var(--size-9);
+  padding: var(--size-9);
+  background: hsl(var(--secondary));
+  border-radius: var(--size-7);
+  box-shadow: var(--size-2) var(--size-2) 0 0 hsl(var(--heading));
+  transition: all 250ms ease-in-out;
+  border: 1px solid hsl(var(--heading));
+}
+
+.card:hover {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.card-img {
+  height: var(--image-height);
+  border-radius: calc(var(--size-7) / 2);
+  overflow: hidden;
+}
+
+.card-main {
+  --flow: var(--size-3);
+}
+
+.card-label{
+  width: max-content;
+  padding: var(--size-1) var(--size-3);
+  font-size: var(--size-3);
+  background: hsl(var(--primary));
+  font-weight: 800;
+  border-radius: var(--size-1);
+  color: hsl(var(--heading));
+}
+
+.card-published {
+  font-size: var(--size-3);
+  color: hsl(var(--heading));
+}
+
+.card-title {
+  font-size: var(--size-8);
+  font-weight: 800;
+  color: hsl(var(--heading));
+  transition: color 250ms ease-in-out;
+  line-height: 1;
+
+  &:hover,
+  &:focus-within,
+  &:active {
+    color: hsl(var(--primary));
+  }
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3)
+}
+
+.card-profile_img {
+  width: var(--ava-width);
+}
+
+.card-profile_name {
+  font-size: var(--size-5);
+  font-weight: 800;
+  color: hsl(var(--heading));
+
+  &:hover {
+    color: hsl(var(--primary))
+  }
+}

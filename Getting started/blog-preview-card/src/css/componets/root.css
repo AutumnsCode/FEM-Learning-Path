@@ -1,0 +1,31 @@
+:root {
+  --primary: 47, 88%, 63%;
+  --secondary: 0, 0%, 100%;
+  --text: 0, 0%, 50%;
+  --heading: 0, 0%, 7%;
+
+  /* Padding and font-sizes */
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 0.75rem;
+  --size-5: 0.875rem;
+  --size-6: 0.875rem;
+  --size-7: 1.25rem;
+  --size-8: 1.25rem;
+  --size-9: 1.5rem;
+
+  --max-width: 24rem;
+  --img-height: 12.5rem;
+  --ava-width: 2rem;
+
+}
+
+@media (width >= 25rem) {
+  :root {
+    --size-2: 1rem;
+    --size-4: 0.875rem;
+    --size-6: 1rem;
+    --size-8: 1.5rem
+  }
+}
