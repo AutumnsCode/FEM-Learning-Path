@@ -140,7 +140,7 @@ main {
 
 @media ( width >= 35rem) {
   .article {
-    padding: var(--size-6);
+    padding: var(--size-7);
   }
   .section, .aside {
     margin-inline: 0;
