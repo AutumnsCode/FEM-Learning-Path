@@ -110,6 +110,7 @@ h1 {
   width: min(100%, 21.875rem);
   position: relative;
   z-index: 10;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.05);
 
 
   &::after {
