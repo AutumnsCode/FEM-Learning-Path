@@ -135,7 +135,7 @@ main {
 .nutrition tr:last-of-type td,
 .nutrition tr:last-of-type th {
   border-bottom: none;
-  padding-bottom: 0;
+  padding-bottom: 0.5rem;
 }
 
 @media ( width >= 35rem) {
