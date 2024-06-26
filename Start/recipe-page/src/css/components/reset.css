@@ -1,0 +1,30 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: var(--ff-heading);
+  font-weight: normal;
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+picture, img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--ff-base);
+  line-height: 1.5;
+  font-size: 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 300;
+}

@@ -1,0 +1,35 @@
+:root {
+  --bg: #f3e6d8;
+  --article-bg: #ffffff;
+  --text: #5e574f;
+  --header-big: #302d2c;
+  --header: #854632;
+  --aside: #fff5fa;
+  --aside-content: #7b284f;
+  --line: #e4ded8;
+
+  --ff-base: 'Outfit',sans-serif;
+  --ff-heading: 'Young Serif',serif;
+
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+
+  --radius-base: 0.75rem;
+  --radius-big: 1.5rem;
+
+  --size-1: 0.5rem;
+  --size-2: 1rem;
+  --size-3: 1.5rem;
+  --size-4: 1.75rem;
+  --size-5: 1.875rem;
+  --size-6: 2rem;
+  --size-7: 2.25rem;
+}
+
+@media (width >= 48rem) {
+  :root {
+    --fs-700: 2.5rem;
+  }
+}
