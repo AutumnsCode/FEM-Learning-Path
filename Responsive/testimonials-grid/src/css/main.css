@@ -1,0 +1,159 @@
+@layer root, reset;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url(./styles/reset.css) layer(reset);
+@import url(./styles/root.css) layer(root);
+
+
+body {
+  background: hsl(var(--bg));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+  width: min(100% - 3rem, 69.5rem);
+  margin: 4.375rem auto;
+  display: grid;
+  gap: 1.5rem;
+
+  @media (width >= 35rem) {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-block: 2rem;
+  }
+}
+
+.card {
+  --color: var(--clr-very-dark-black);
+  --background: var(--clr-white);
+  padding: 1.5rem 1.875rem;
+  background-color: hsl(var(--background));
+  border-radius: 0.5rem;
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  color: hsl(var(--color));
+  transform: scale(1.0);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: none;
+}
+
+.card-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  & img {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* need to change */
+    border: 2px solid #000;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  & h1,
+  & h2 {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  & p {
+    font-size: 0.8125rem;
+    line-height: 1;
+    color: hsl(var(--color), 0.5);
+  }
+}
+
+.card-content {
+  display: grid;
+  gap: 0.8125rem;
+
+  & h2,
+  & h3 {
+    font-size: 19.2px;
+    font-weight: 600;
+    line-height: 1.;
+  }
+
+  & p {
+    color: hsl(var(--color), 0.7)
+  }
+}
+
+.card:nth-child(1) {
+  --background: var(--clr-moderate-violet);
+  --color: var(--clr-white);
+  grid-column: 1 / -1;
+  position: relative;
+  z-index: 1;
+
+  @media (width >= 48rem) {
+    grid-column: 1 / span 2;
+  }
+}
+
+.card:nth-child(1)::after {
+  position: absolute;
+  content: '';
+  background-image: url(/src/images/bg-pattern-quotation.svg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  inset: 0;
+  top: 0.1rem;
+  left: 70%
+}
+
+.card:nth-child(2) {
+  --background: var(--clr-very-dark-blue);
+  --color: var(--clr-white)
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+  --background: var(--clr-white);
+  --color: var(--clr-very-dark-black)
+}
+
+.card:nth-child(4) {
+  --background: var(--clr-very-dark-black);
+  --color: var(--clr-white);
+  grid-column: 1/-1;
+
+  @media (width >= 48rem) {
+    grid-row: 2 ;
+    grid-column: 2/span 2;
+  }
+}
+
+.card:nth-child(5)  {
+  grid-column: 1/-1;
+
+  @media (width >= 48rem) {
+    grid-row: 1 / span 2;
+    grid-column: 4/ span 1;
+  }
+}
+
+.card:nth-child(3) {
+  grid-row: 2/span 1;
+}
