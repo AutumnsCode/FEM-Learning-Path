@@ -1,0 +1,15 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --fz-base: 1.3rem;
+  --fz-title: 1.6rem;
+}
+
+@media (width >= 48rem) {
+  :root {
+    --fz-title: 2.2rem;
+  }
+}

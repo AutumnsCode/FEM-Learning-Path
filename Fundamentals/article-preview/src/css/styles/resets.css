@@ -1,0 +1,31 @@
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+picture, img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul {
+  list-style: none;
+}
