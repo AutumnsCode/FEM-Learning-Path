@@ -229,7 +229,7 @@ main {
 }
 
 
-[aria-expanded='true'] {
+[aria-expanded='false'] {
   background-color: var(--desaturated-dark-blue);
 }
 
