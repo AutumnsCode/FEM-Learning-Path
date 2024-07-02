@@ -33,6 +33,9 @@ function handleSubmit() {
     userEmail.textContent = emailInput.value
     emailInput.value = ''
     wrapper.setAttribute('data-active', `${sections[1].id}`)
+  } else {
+    form.setAttribute('data-correct', 'false')
+    emailInput.setAttribute('aria-invalid', 'true')
   }
 }
 
@@ -47,10 +50,12 @@ function checkEmailValidation(event) {
   event.preventDefault()
   const isNotValid =  checkEmail() == false
 
-  if(isNotValid) {
+  if(isNotValid || emailInput.value === '') {
     form.setAttribute('data-correct', 'false')
+    emailInput.setAttribute('aria-invalid', 'true')
   } else {
     form.setAttribute('data-correct', 'true')
+    emailInput.setAttribute('aria-invalid', 'false')
   }
 }
 

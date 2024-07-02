@@ -110,7 +110,8 @@
 }
 
 [data-correct='false'] .sign-email input,
-[data-correct='false'] .sign-email input:focus-within{
+[data-correct='false'] .sign-email input:focus-within,
+[aria-invalid='true'] {
   border-color: hsl(var(--error));
   background: hsl(var(--error), 0.1);;
   color: hsl(var(--error));
