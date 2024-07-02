@@ -45,7 +45,6 @@ function handleDismiss() {
 }
 
 
-
 function checkEmailValidation(event) {
   event.preventDefault()
   const isNotValid =  checkEmail() == false
