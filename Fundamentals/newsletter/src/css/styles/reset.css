@@ -1,0 +1,30 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+button, 
+input, 
+input::placeholder {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+picture, img {
+  max-width: 100%;
+  display: block;
+}

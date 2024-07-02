@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+:root {
+  --error: 4, 100%, 67%;
+  --card-bg: hsl(0, 0%, 100%);
+  --input-placeholder: hsl(231, 7%, 60%);
+  --text: hsl(234, 29%, 20%);
+  --bg: hsl(235, 18%, 26%);
+
+  --fs-base: 1rem;
+  --fs-heading: 2.5rem;
+  --ff-base: 'Roboto', sans-serif;
+  --fw-base: 400;
+  --fw-bold: 700;
+}
+
